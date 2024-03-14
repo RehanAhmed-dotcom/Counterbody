@@ -1,0 +1,166 @@
+import { StyleSheet, Platform } from "react-native";
+import colors from "../../constants/colors";
+import { widthPercentageToDP as W2DP } from "react-native-responsive-screen";
+const colorEmphasis = {
+  high: 0.87,
+  medium: 0.6,
+  disabled: 0.38,
+};
+export default StyleSheet.create({
+  buttonText: {
+    color: colors.white,
+    paddingVertical: 10,
+    fontWeight: "bold",
+    opacity: colorEmphasis.high,
+  },
+  headerContainer: {
+    height: 80,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 10,
+  },
+  itemSeparator: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: colors.white,
+    opacity: colorEmphasis.medium,
+  },
+  qaContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    marginVertical: W2DP(2),
+  },
+  button: {
+    paddingHorizontal: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    
+  },
+  buttonE: {
+    paddingHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  container: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "#000",
+  },
+  innerContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  textStyle1: {
+    fontSize: 22,
+    color: colors.iosRed,
+    width: "65%",
+    textAlign: "center",
+    marginTop: 15,
+  },
+  topContainer: {
+    backgroundColor: "transparent",
+    marginTop: 35,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  titleView: {
+    height: 40,
+    backgroundColor: "#000",
+    paddingTop: 5,
+    marginLeft: 15,
+  },
+  titleText: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: colors.white,
+  },
+  imageBox: {
+    width: 30,
+    height: 30,
+    //marginTop: 8,
+    backgroundColor: colors.white,
+    borderRadius: 50,
+    alignItems: "center",
+    marginRight: 15,
+  },
+  logoImageBox: {
+    width: 45,
+    height: 45,
+    marginRight: 110,
+    backgroundColor: colors.white,
+    borderRadius: 50,
+    alignItems: "center",
+  },
+  mImage: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+  },
+  messagesView: {
+    flexDirection: "row",
+    width: "100%",
+    backgroundColor: "#000000",
+    justifyContent: "space-between",
+    padding: 15,
+    paddingHorizontal: 15,
+    borderColor: "#222",
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  mView: {
+    flex: 2,
+    paddingRight: 30,
+  },
+  messagesTextView: {
+    //width: '100%',
+    //flex: 2,
+    marginLeft: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    //flex: 1,
+  },
+  messageSenderName: {
+    fontSize: 17,
+    fontWeight: "bold",
+    color: colors.white,
+  },
+  messageText: {
+    color: colors.white,
+    marginTop: 4,
+    marginLeft: 10,
+  },
+  messagesDView: {},
+  dateText: {
+    fontWeight: "bold",
+    color: colors.white,
+    marginLeft: 10,
+  },
+  unreadMessagesNumberView: {
+    alignItems: "center",
+    marginTop: 4,
+  },
+  unreadMessagesNumber: {
+    width: 20,
+    height: 20,
+    fontSize: 17,
+    color: colors.white,
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontWeight: "bold",
+    borderRadius: 50,
+    backgroundColor: colors.iosRed,
+  },
+  newMessageButton: {
+    position: "absolute",
+    width: 50,
+    height: 50,
+    backgroundColor: colors.iosRed,
+    borderRadius: 50,
+    alignSelf: "flex-end",
+    top: 520,
+    right: 20,
+    alignItems: "center",
+    paddingTop: 10,
+  },
+});
